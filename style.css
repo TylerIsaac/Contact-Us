@@ -1,0 +1,283 @@
+.body-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: Helvetica, "Signika", sans-serif;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 91%;
+}
+
+.card-header1 img {
+  display: block;
+  width: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.location {
+  text-transform: uppercase;
+  display: block;
+  margin: -16% auto 0;
+  text-align: center;
+  font-size: 8vw;
+}
+
+.address {
+  font-size: 4vw;
+  display: block;
+  margin: 15% auto;
+  text-align: center;
+}
+
+.phone {
+  font-size: 4vw;
+  display: block;
+  margin: 0% auto;
+}
+
+.hours-grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 9em 10em;
+  font-size: 4vw;
+  margin: 2% 0 0 2%;
+}
+
+.hours-title {
+  text-transform: uppercase;
+  font-size: 5vw;
+  display: block;
+  margin: 15% 2% 3%;
+  font-weight: 600;
+}
+
+.hours {
+  text-align: end;
+}
+
+.days {
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.btn-grid {
+  display: block;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: auto 0% 0%;
+  width: 100%;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+a.btn1 {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 4.5vw;
+  color: #fff;
+  background-color: #d81e17;
+  width: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  padding: 3% 0;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+
+a.btn1:hover {
+  text-decoration: none;
+  background-color: #961410;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.btn1:active {
+  text-decoration: none;
+
+  color: white;
+}
+
+a.btn1:visited {
+  text-decoration: none;
+
+  color: white;
+}
+
+.flexible {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 480px) {
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    width: 375px;
+  }
+
+  .hours-grid {
+    grid-template-columns: 150px 157px;
+  }
+
+  .location {
+    font-size: 33px;
+  }
+
+  .address {
+    font-size: 14.4px;
+    margin: 10% 4%;
+  }
+
+  .phone {
+    font-size: 14.4px;
+    margin: 0% 4%;
+  }
+
+  .hours-title {
+    font-size: 16.8px;
+    margin: 10% 4% 2%;
+  }
+
+  .hours-grid {
+    font-size: 14.4px;
+    margin: 2% 0 0 4%;
+  }
+
+  a.btn1 {
+    font-size: 14.4px;
+    width: 310px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    width: 300px;
+  }
+
+  .hours-grid {
+    grid-template-columns: 120px 120px;
+  }
+
+  .address {
+    margin: 10% auto;
+    text-align: center;
+  }
+
+  .phone {
+    font-size: 14.4px;
+    margin: 0% auto;
+    text-align: center;
+  }
+
+  .location {
+    font-size: 26px;
+  }
+
+  a.btn1 {
+    width: 242px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    width: 22%;
+  }
+
+  .location {
+    font-size: 2vw;
+}
+
+  .address {
+    font-size: .85vw;
+    margin: 6% auto;
+  }
+
+  .phone {
+    font-size: .85vw;
+    margin: 0% auto;
+    text-align: center;
+  }
+
+  .hours-grid {
+    grid-template-columns: 9em 13.25em;
+  }
+
+  .hours-grid {
+    font-size: .85vw;
+    margin: 2% 0 0 2%;
+  }
+
+  .hours-title {
+    font-size: 1.1vw;
+    margin: 6% 2% 2%;
+  }
+
+  .btn-grid {
+    margin: auto 0% 2%;
+  }
+
+  .btn-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    margin: 5% auto 0;
+    grid-gap: 5%;
+  }
+
+  a.btn1 {
+    width: 100%;
+    padding: 5% 0;
+    border-radius: 10px;
+    font-size: .85vw;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .hours-grid {
+    grid-template-columns: 9em 14.25em;
+}
+}
+
+@media only screen and (min-width: 3840px) {
+  a.btn1 {
+    border-radius: 20px;
+  }
+
+  .hours-grid {
+    grid-template-columns: 9em 14.65em;
+}
+}
